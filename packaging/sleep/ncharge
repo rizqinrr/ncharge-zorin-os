@@ -1,0 +1,12 @@
+#!/bin/sh
+# /usr/lib/systemd/system-sleep/ncharge
+# Restore charge threshold on system resume/hibernate
+
+case "$1" in
+    post)
+        if [ -x /usr/local/bin/ncharge-apply ]; then
+            /usr/local/bin/ncharge-apply restore >/dev/null 2>&1
+        fi
+        ;;
+esac
+

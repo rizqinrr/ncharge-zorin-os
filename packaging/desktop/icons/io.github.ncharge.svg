@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3584E4"/>
+      <stop offset="100%" stop-color="#1C71D8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- App icon container (squircle Adwaita) -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bg)" filter="url(#shadow)"/>
+
+  <!-- Battery Body -->
+  <rect x="28" y="44" width="66" height="40" rx="8" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+  <!-- Battery Terminal Tip -->
+  <rect x="96" y="56" width="6" height="16" rx="3" fill="#FFFFFF"/>
+
+  <!-- Charge level 80% -->
+  <rect x="36" y="52" width="40" height="24" rx="4" fill="#FFFFFF" fill-opacity="0.9"/>
+
+  <!-- Threshold Limit Indicator Notch/Line -->
+  <line x1="80" y1="40" x2="80" y2="88" stroke="#F6D32D" stroke-width="4" stroke-linecap="round"/>
+</svg>
+

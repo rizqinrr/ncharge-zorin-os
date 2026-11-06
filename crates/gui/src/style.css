@@ -1,0 +1,181 @@
+/* ncharge custom styling to match FigCraft design 1:1 */
+
+window {
+    background-color: @window_bg_color;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.save-btn {
+    border-radius: 8px;
+    padding: 0 16px;
+    min-height: 34px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #1C71D8;
+    color: #FFFFFF;
+    transition: all 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.save-btn:disabled {
+    opacity: 0.4;
+    background-color: #1C71D8;
+    color: #FFFFFF;
+}
+
+.battery-card {
+    border-radius: 12px;
+    padding: 16px;
+    background-color: @card_bg_color;
+    border: 1px solid alpha(currentColor, 0.08);
+    box-shadow: 0 1px 3px alpha(currentColor, 0.05);
+}
+
+.battery-level {
+    font-size: 40px;
+    font-weight: 700;
+    font-feature-settings: "tnum";
+    letter-spacing: -1px;
+}
+
+.battery-status {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.75;
+}
+
+.above-limit-banner {
+    background-color: alpha(#1C71D8, 0.12);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.limit-meter-track {
+    background-color: alpha(currentColor, 0.12);
+    border-radius: 4px;
+    min-height: 8px;
+}
+
+.limit-meter-fill {
+    background-color: #1C71D8;
+    border-radius: 4px;
+    min-height: 8px;
+}
+
+.limit-meter-tick {
+    background-color: currentColor;
+    min-width: 2px;
+    border-radius: 1px;
+}
+
+.card-divider {
+    background-color: alpha(currentColor, 0.1);
+    min-height: 1px;
+}
+
+.active-limit-label {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.active-limit-val {
+    font-size: 15px;
+    font-weight: 600;
+    font-feature-settings: "tnum";
+}
+
+.active-limit-sublabel {
+    font-size: 12px;
+    opacity: 0.65;
+}
+
+.group-header {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.preset-chip {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: @card_bg_color;
+    border: 1px solid alpha(currentColor, 0.1);
+    /* Spring / jelly bounce transition (cubic-bezier damping ~0.55 equivalent) */
+    transition: transform 260ms cubic-bezier(0.34, 1.56, 0.64, 1),
+                background-color 200ms ease,
+                border-color 200ms ease,
+                box-shadow 260ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.preset-chip:hover {
+    background-color: alpha(currentColor, 0.04);
+}
+
+.preset-chip:active {
+    transform: scale(0.95);
+}
+
+.preset-chip-selected {
+    border: 2px solid #1C71D8;
+    background-color: alpha(#1C71D8, 0.08);
+    box-shadow: 0 2px 8px alpha(#1C71D8, 0.20);
+    transform: scale(1.02);
+}
+
+.preset-percent {
+    font-size: 20px;
+    font-weight: 700;
+    font-feature-settings: "tnum";
+    transition: color 200ms ease;
+}
+
+.preset-percent-selected {
+    color: #1A5FB4;
+}
+
+.preset-title {
+    font-size: 13px;
+    opacity: 0.7;
+    transition: color 200ms ease, opacity 200ms ease;
+}
+
+.preset-title-selected {
+    color: #1A5FB4;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.preset-desc {
+    font-size: 14px;
+    line-height: 1.45;
+    opacity: 0.75;
+    transition: opacity 180ms ease;
+}
+
+.unsaved-warning {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.unsupported-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.unsupported-body {
+    font-size: 14px;
+    line-height: 1.45;
+    opacity: 0.75;
+}
+
+.code-box {
+    background-color: alpha(currentColor, 0.08);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-family: monospace;
+    font-size: 13px;
+}

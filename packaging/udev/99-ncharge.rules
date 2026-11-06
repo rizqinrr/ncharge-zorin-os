@@ -1,0 +1,3 @@
+# Optional udev rule for ASUS laptops where asus-nb-wmi initializes late
+ACTION=="add", SUBSYSTEM=="platform", KERNEL=="asus-nb-wmi", RUN+="/usr/local/bin/ncharge-apply restore"
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ncharge
+Comment=Battery Charge Limit Manager for Linux
+Exec=/usr/local/bin/ncharge
+Icon=io.github.ncharge
+Terminal=false
+Type=Application
+Categories=Utility;Settings;HardwareSettings;
+StartupNotify=true
+StartupWMClass=io.github.ncharge
+Keywords=battery;charge;limit;health;asus;vivobook;
+
